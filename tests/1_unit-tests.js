@@ -92,8 +92,8 @@ suite('Unit Tests', function () {
     });
     // #12
     test('Array #include, #notInclude', function () {
-      assert.fail(winterMonths, 'jul', "It's summer in july...");
-      assert.fail(backendLanguages, 'javascript', 'JS is a backend language');
+      assert.isArray('isThisAnArray?'.split(''), 'String.prototype.split() returns an array');
+      assert.isNotArray([1, 2, 3].indexOf(2), 'indexOf returns a number');
     });
   });
 
